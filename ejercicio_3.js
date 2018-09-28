@@ -1,13 +1,14 @@
-function retornarTipoDe(arr = ['algo',1,true,'amama','dads' ]){
+function retornarTipoDe(arr = ['algo',1,true,'amama','dads',[1,2]]){
     let tipos = [];
     let canti = [];
-    arr.forEach((ele,index)=>{
+    arr.forEach((ele)=>{
         
         if(!tipos.includes(typeof(ele))){
             tipos.push(typeof(ele));
-            canti[index] = 0;        
+            canti.push(0);        
         }
     }); 
+    console.log(canti);
     for(let i = 0; i<arr.length;i++){
         let element = typeof(arr[i]);
         for(let j = 0; j<arr.length;j++){
