@@ -1,4 +1,4 @@
-function retornarTipoDe(arr = ['algo',1,true,'amama','dads']){
+function retornarTipoDe(arr = ['algo',1,true,'amama','dads' ]){
     let tipos = [];
     let canti = [];
     arr.forEach((ele,index)=>{
